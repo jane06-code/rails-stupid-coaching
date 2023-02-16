@@ -1,0 +1,21 @@
+
+<h1>Hi from answer</h1>
+<h1><%= @question %></h1>
+<h1><%= @coach_answer %></h1>
+
+<div>
+  <h1>Stupid Coaching</h1>
+  <% @question %>
+  <p> <% @question %> </p>
+  <p>--you</p>
+</div>
+<div >
+  <% if @question == "I am going to work" %>
+      <strong> Great! good job </strong>
+    <% elsif @question.end_with? ("?")%>
+      <strong> Silly question, get dressed and go to work! </strong>
+    <% else %>
+      <strong>I don't care, get dressed and go to work!</strong>
+  <% end %>
+  <p>--couch</p>
+</div>
